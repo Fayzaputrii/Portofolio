@@ -1,0 +1,681 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Fayza Putri Zulfikar | UI/UX Designer &amp; Engineer</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#89ceff",
+                        "surface": "#fcf8ff",
+                        "on-secondary-fixed": "#001e2f",
+                        "surface-variant": "#e4e1ee",
+                        "surface-container-low": "#f5f2ff",
+                        "tertiary-fixed-dim": "#ffb695",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#c3c0ff",
+                        "on-tertiary-container": "#ffd2be",
+                        "on-background": "#1b1b24",
+                        "on-primary-fixed": "#0f0069",
+                        "on-surface": "#1b1b24",
+                        "tertiary-fixed": "#ffdbcc",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#dad7ff",
+                        "on-tertiary-fixed-variant": "#7b2f00",
+                        "primary-fixed": "#e2dfff",
+                        "outline": "#777587",
+                        "on-primary-fixed-variant": "#3323cc",
+                        "secondary": "#006591",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#7e3000",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#c9e6ff",
+                        "on-secondary-container": "#004666",
+                        "primary": "#3525cd",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#004c6e",
+                        "inverse-primary": "#c3c0ff",
+                        "background": "#fcf8ff",
+                        "on-surface-variant": "#464555",
+                        "surface-bright": "#fcf8ff",
+                        "inverse-surface": "#302f39",
+                        "primary-container": "#4f46e5",
+                        "outline-variant": "#c7c4d8",
+                        "surface-container-highest": "#e4e1ee",
+                        "surface-tint": "#4d44e3",
+                        "secondary-container": "#39b8fd",
+                        "surface-container": "#f0ecf9",
+                        "surface-dim": "#dcd8e5",
+                        "on-tertiary-fixed": "#351000",
+                        "tertiary-container": "#a44100",
+                        "surface-container-high": "#eae6f4",
+                        "inverse-on-surface": "#f3effc",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.8rem",
+                        "xl": "1.25rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "8rem",
+                        "stack-gap": "1.5rem",
+                        "gutter": "1.5rem",
+                        "container-max": "1280px",
+                        "margin-desktop": "2rem",
+                        "margin-mobile": "1rem"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "headline-sm": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #3525cd 0%, #39b8fd 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .bento-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 glass border-b border-outline-variant/30 h-20 shadow-sm transition-all duration-300" style="transform: translateY(0px);">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold overflow-hidden border-2 border-white shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Foto Formal of Fayza Putri Zulfikar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIOTGYruVikDkKI9ieoNzCzLFqugv9Ue_ROI-FI9-f9R2_hjWeZubCwzkrTYN2bK2waKeFQShOaMN-_a6XSgX4fz4M9HweDF-0fbrzCCmCo5CggBeRCGszfTizwO1O4LciS9etXKLHmmXrkoNVY6DX3PVK8JWXWBDySRFi2QTDpvxRJegVlxW8RFpeSPsKkGg3ZEp6griEdw6yKd8suiBtfAg-A4_24LbX2kIpRH6J3uVwhZWSxKDKhwhDv1DDGiw5">
+</div>
+<span class="font-display-lg text-headline-sm text-on-surface dark:text-inverse-on-surface tracking-tighter">Fayza Putri Z.</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#projects">Projects</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#experience">Experience</a>
+<a class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-md text-label-md hover:scale-105 active:scale-95 transition-all shadow-lg shadow-primary/20" href="#contact">Contact</a>
+</div>
+<button class="md:hidden p-2 text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="pt-40 pb-20 md:pt-56 md:pb-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative overflow-hidden">
+<div class="absolute -top-24 -left-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse"></div>
+<div class="absolute top-1/2 -right-24 w-80 h-80 bg-secondary-container/10 rounded-full blur-3xl"></div>
+<div class="relative z-10 text-center md:text-left max-w-4xl">
+<span class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary font-label-md text-label-md mb-6 animate-bounce">
+                    Hello, I'm Fayza Putri Zulfikar
+                </span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 leading-tight">Software &amp; Application Developer with <span class="text-gradient">UI/UX Design Experience</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl">Cum Laude Informatics graduate with experience in developing web and Android applications, complemented by a strong foundation in UI/UX design. Passionate about building functional, scalable, and user-centered digital solutions through clean code and thoughtful design.</p>
+<div class="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
+<a class="w-full sm:w-auto px-8 py-4 bg-primary text-on-primary rounded-xl font-label-md text-label-md flex items-center justify-center gap-2 hover:shadow-xl hover:shadow-primary/30 transition-all group" href="#projects">
+                        View Projects
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto px-8 py-4 border border-outline-variant bg-white/50 backdrop-blur-sm text-on-surface rounded-xl font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-white transition-all" href="https://drive.google.com/file/d/1PdV-u0rBwF9PZQ8W4ctrS-FKTd6G5Pms/view?usp=drive_link" target="_blank"><span class="material-symbols-outlined">visibility</span> View CV</a>
+</div>
+</div>
+</section>
+<!-- Bento Grid Skills -->
+<section class="py-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="about">
+<div class="mb-12">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Expertise &amp; Skills</h2>
+<div class="w-20 h-1.5 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- UI/UX Skills -->
+<div class="bento-card p-8 bg-white border border-outline-variant/30 rounded-xl shadow-sm flex flex-col gap-6">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">design_services</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-4">UI/UX Design</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container rounded-full text-on-surface-variant text-label-md">Wireframing</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-on-surface-variant text-label-md">Prototyping</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-on-surface-variant text-label-md">User Flow</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-on-surface-variant text-label-md">Information Architecture</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-on-surface-variant text-label-md">User Research</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-on-surface-variant text-label-md">UI Design</span><span class="px-3 py-1 bg-surface-container rounded-full text-on-surface-variant text-label-md">Low/High-Fidelity Mockups</span><span class="px-3 py-1 bg-surface-container rounded-full text-on-surface-variant text-label-md">Usability Testing</span></div>
+</div>
+</div>
+<!-- Tools & Tech -->
+<div class="bento-card p-8 bg-white border border-outline-variant/30 rounded-xl shadow-sm flex flex-col gap-6">
+<div class="w-12 h-12 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">code</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-4">Technical Skills</h3>
+<div class="flex flex-wrap gap-2"><span class="px-3 py-1 bg-secondary-container/10 text-secondary rounded-full text-label-md">HTML</span><span class="px-3 py-1 bg-secondary-container/10 text-secondary rounded-full text-label-md">CSS</span><span class="px-3 py-1 bg-secondary-container/10 text-secondary rounded-full text-label-md">JavaScript</span><span class="px-3 py-1 bg-secondary-container/10 text-secondary rounded-full text-label-md">PHP</span><span class="px-3 py-1 bg-secondary-container/10 text-secondary rounded-full text-label-md">Kotlin</span><span class="px-3 py-1 bg-secondary-container/10 text-secondary rounded-full text-label-md">MySQL</span><span class="px-3 py-1 bg-secondary-container/10 text-secondary rounded-full text-label-md">Firebase</span><span class="px-3 py-1 bg-secondary-container/10 text-secondary rounded-full text-label-md">Git</span><span class="px-3 py-1 bg-secondary-container/10 text-secondary rounded-full text-label-md">GitHub</span><span class="px-3 py-1 bg-secondary-container/10 text-secondary rounded-full text-label-md">Android Studio</span><span class="px-3 py-1 bg-secondary-container/10 text-secondary rounded-full text-label-md">VS Code</span><span class="px-3 py-1 bg-secondary-container/10 text-secondary rounded-full text-label-md">Figma</span></div>
+</div>
+</div>
+<!-- Soft Skills -->
+<div class="bento-card p-8 bg-white border border-outline-variant/30 rounded-xl shadow-sm flex flex-col gap-6">
+<div class="w-12 h-12 rounded-lg bg-tertiary-fixed/30 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-4">Soft Skills</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-tertiary-fixed/10 text-tertiary rounded-full text-label-md">Teamwork</span>
+<span class="px-3 py-1 bg-tertiary-fixed/10 text-tertiary rounded-full text-label-md">Communication</span>
+<span class="px-3 py-1 bg-tertiary-fixed/10 text-tertiary rounded-full text-label-md">Problem Solving</span>
+<span class="px-3 py-1 bg-tertiary-fixed/10 text-tertiary rounded-full text-label-md">Critical Thinking</span>
+<span class="px-3 py-1 bg-tertiary-fixed/10 text-tertiary rounded-full text-label-md">Adaptability</span><span class="px-3 py-1 bg-tertiary-fixed/10 text-tertiary rounded-full text-label-md">Time Management</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Timeline -->
+<section class="py-20 bg-surface-container-lowest" id="experience">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="mb-12 text-center">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Experience</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto">Building professional experience across government institutions and educational organizations.</p>
+</div>
+<div class="relative max-w-3xl mx-auto flex flex-col gap-16"><!-- BPK RI -->
+<div class="group flex gap-6 md:gap-8">
+<div class="shrink-0 w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">UI/UX Designer</h3>
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1">
+<span class="font-bold text-primary">BPK RI</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant text-label-md">July – August 2024</span>
+</div>
+<div class="mt-4 pl-1 border-l-2 border-primary/20">
+<p class="text-on-surface-variant text-body-md leading-relaxed pl-4">Responsible for redesigning the BPK RI internal website to improve accessibility and user engagement. Conducted user research and developed high-fidelity mockups.</p>
+
+</div>
+</div>
+</div>
+<!-- Bangkit Academy -->
+<div class="group flex gap-6 md:gap-8">
+<div class="shrink-0 w-14 h-14 rounded-2xl bg-secondary-container/20 flex items-center justify-center text-secondary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">terminal</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Mobile Development</h3>
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1">
+<span class="font-bold text-secondary">Bangkit Academy</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant text-label-md">Feb – June 2024</span>
+</div>
+<div class="mt-4 pl-1 border-l-2 border-secondary/20">
+<p class="text-on-surface-variant text-body-md leading-relaxed pl-4">Intensive Android application development program using Kotlin. Successfully designed and launched the team's travel application MVP as the final project.</p>
+</div>
+</div>
+</div>
+<!-- Batavia On Telkom -->
+<div class="group flex gap-6 md:gap-8">
+<div class="shrink-0 w-14 h-14 rounded-2xl bg-tertiary-fixed/30 flex items-center justify-center text-tertiary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">palette</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Decoration Staff</h3>
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1">
+<span class="font-bold text-tertiary">Batavia On Telkom (BOT)</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant text-label-md">September 2021 - December 2023</span>
+</div>
+<div class="mt-4 pl-1 border-l-2 border-tertiary/20">
+<p class="text-on-surface-variant text-body-md leading-relaxed pl-4">Designed event decoration concepts and moodboards using Figma, created social media content, and collaborated across divisions to align visual concepts.</p>
+</div>
+</div>
+</div>
+<!-- BPM Informatika -->
+<div class="group flex gap-6 md:gap-8">
+<div class="shrink-0 w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">campaign</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Comm &amp; Info Intern</h3>
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1">
+<span class="font-bold text-primary">BPM Informatika</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant text-label-md">October 2022 – May 2023</span>
+</div>
+<div class="mt-4 pl-1 border-l-2 border-primary/20">
+<ul class="list-disc ml-9 text-on-surface-variant flex flex-col gap-2 text-body-md">
+<li class="">Designed publication materials and social media layouts using Figma.</li>
+<li class="">Managed visual assets and maintained brand consistency via style guides.</li>
+<li class="">Developed annual division programs and conducted evaluations.</li>
+</ul>
+</div>
+</div>
+</div></div>
+</div>
+</section>
+<!-- Project Cards -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-20" id="projects">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Featured Projects</h2>
+<p class="text-on-surface-variant max-w-xl">A curated collection of design works and application development.</p>
+</div>
+
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8"><div class="group bg-white rounded-xl overflow-hidden border border-outline-variant/30 shadow-sm hover:shadow-xl transition-all flex flex-col">
+<div class="relative overflow-hidden bg-slate-100 flex items-center justify-center p-6 h-80"><div class="relative w-full max-w-3xl mx-auto group/mockup">
+<!-- MacBook Pro Frame -->
+<div class="relative bg-[#0a0a0a] rounded-xl p-[1.5%] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] border border-white/10 overflow-hidden">
+<!-- Screen Reflection Overlay -->
+<div class="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none z-10"></div>
+<!-- Screen Content -->
+<div class="aspect-[16/10] rounded-sm overflow-hidden bg-black relative">
+<img alt="BPK RI Website Redesign Mockup" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT7RewYzVRhdNXkeIfCMw3Uwv0Ho9z2fbA39dlYxAOyYMf0KMsGR-zLJRhiufpSTHyxU2691Xd3c6Y2T6woa2F4vZixM1R8JorjUnMpmQ1AkA-NkISYh8Dxp6tYA3rs5sb8UvDvOXstlUg2nUK26qATSEgQzSQ0VBQ9_0eADOzWhc15z93imyyzShIOu04P0kXeM1c2e5UunTz1NL_yyTl142B_o7C9HZ0guDJboKZPmDS6kriQjZEKJSZccaBghrU">
+</div>
+</div>
+<!-- MacBook Base with Depth -->
+<div class="relative">
+<div class="h-2 w-full bg-[#1a1a1a] rounded-b-xl mx-auto mt-0.5 shadow-lg border-t border-white/5"></div>
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/4 h-1 bg-[#050505] rounded-b-full"></div>
+</div>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<span class="px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white text-label-md">Web Redesign</span>
+</div></div>
+<div class="p-8 flex flex-col gap-4">
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-primary/10 text-primary text-[12px] font-bold rounded">Figma</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-[12px] font-bold rounded">Web</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4">BPK RI Website Redesign</h3>
+<p class="text-on-surface-variant text-body-md line-clamp-2">Redesigned the BPK RI internal website to improve accessibility and user engagement. Created high-fidelity mockups and interactive prototypes.</p>
+<a class="mt-2 text-primary font-label-md flex items-center gap-2 group/link" href="https://www.figma.com/proto/jdDwH3awES84D8BAx7shuo/Biro-TI?page-id=0%3A1&amp;node-id=7-2&amp;p=f&amp;viewport=-809%2C224%2C0.08&amp;t=HedgYyjOqtUcLeRr-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=7%3A2" target="_blank">
+                            View Prototype <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">open_in_new</span>
+</a><a class="mt-2 text-primary font-label-md flex items-center gap-2 group/link" href="https://github.com/Fayzaputrii/Redesain-Biro-TI" target="_blank">View Repository <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">code</span></a>
+</div>
+</div>
+<!-- Assetin -->
+<div class="group bg-white rounded-xl overflow-hidden border border-outline-variant/30 shadow-sm hover:shadow-xl transition-all flex flex-col">
+<div class="relative overflow-hidden bg-slate-100 flex items-center justify-center p-6 h-80"><div class="relative flex items-center justify-center w-full h-full">
+<!-- Background Phone (Left) -->
+<div class="absolute left-1/4 -translate-x-1/2 w-32 h-64 bg-[#2c2c2e] rounded-[2.5rem] p-1.5 shadow-xl border-[3px] border-[#8e8e93]/30 -rotate-12 opacity-40 transition-transform group-hover:-translate-x-8">
+<div class="w-full h-full rounded-[2.2rem] overflow-hidden bg-black">
+<img alt="Assetin History" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnXVSMXbkdhb8yHNACeOVkClJODMs4-uMGVPNTh2HGW5wBB7o0w7Rav3-A6f2P4nbp7t4W2z0lyPONRVkJ_Dzb6iGQrWGn6b6QMaJ1bXES-CiYPGJKGU70PpvLRdI0V_-0lS3Z1dtSzTE1X7pg-sp_K1J8OjhNVOv6__ZKm6bg_RX1pI-IUz2F1Dh5ePzD856CuKuT5Y5DH73ZIzLsWuaGJqHUIAc1vxGgr1MHvdqJPSfEQR_hvg6zAcNWY53PBYtc">
+</div>
+</div>
+<!-- Main Phone (Center) -->
+<div class="relative w-44 h-[22rem] bg-[#1c1c1e] rounded-[3rem] p-2 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] border-[4px] border-[#8e8e93]/50 z-20 transition-transform group-hover:scale-105">
+<div class="absolute top-4 left-1/2 -translate-x-1/2 w-14 h-5 bg-black rounded-full z-30"></div>
+<div class="w-full h-full rounded-[2.6rem] overflow-hidden bg-black relative">
+<div class="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none z-10"></div>
+<img alt="Assetin Search" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJEceHh-jyS4is4BVkxZGc8-a3aKBs4jE8RsYEfVtEeJCYpNYs0ameA9wsdoNebARdxAR6S7T2QtrJcYLdtUgwO6yLBoLdIZjLASySN0RpoTaQMiF5z-OK9fvxXTGLwHkjIxEI0qIz05FaG3AtwgVZ--xe1tWZ9qCXMmTxaHsYmrrAqGygSWZbHPSux77vTGeue9gvjoFCSB-7byzPdkzQgheX66No0zkTOZHi511y6rPuFpjqAmLUKZiriHOPTkTT">
+</div>
+</div>
+<!-- Background Phone (Right) -->
+<div class="absolute right-1/4 translate-x-1/2 w-32 h-64 bg-[#2c2c2e] rounded-[2.5rem] p-1.5 shadow-xl border-[3px] border-[#8e8e93]/30 rotate-12 opacity-40 transition-transform group-hover:translate-x-8">
+<div class="w-full h-full rounded-[2.2rem] overflow-hidden bg-black">
+<img alt="Assetin Ongoing" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdCXU-iXfV4R7bSPy7erEkW2sBBXKsOfzKfDq8Tpai2zZVrUVL_cdi_M8R164vBqqNpNQiLIKgbcU844Ojlj06kDIYG3Ph_ITfovkXrk86wVcPNvQO2kwgUzk0K7XFTgIKKzrkT46Xnmov-Ar_eSrf4Y4Q-PCyZHIHtWrjDOnqNcqXQRNRNWrhoBM59LFFzWy5xzINJmDX8wnHKgvULhyK_AdZ7N_4_9Vz4pswvgND-qv74rIQAlJ8q-bl8lIUHEhd">
+</div>
+</div>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6 z-30">
+<span class="px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white text-label-md">Mobile App</span>
+</div></div>
+<div class="p-8 flex flex-col gap-4">
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-primary/10 text-primary text-[12px] font-bold rounded">Figma</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-[12px] font-bold rounded">Mobile</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4">Assetin — Management Platform</h3>
+<p class="text-on-surface-variant text-body-md line-clamp-2">An integrated asset management application for mid-sized companies to monitor inventory in real-time through mobile devices.</p>
+<a class="mt-2 text-primary font-label-md flex items-center gap-2 group/link" href="https://www.figma.com/proto/EMAMJfCNXGTgb0G6SRrQuX/AssetIn?page-id=0%3A1&amp;node-id=1-61&amp;p=f&amp;viewport=479%2C407%2C0.16&amp;t=9Jt3CjKl38ztXCll-1&amp;scaling=min-zoom&amp;content-scaling=fixed">
+                            View Prototype <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Dormitory -->
+<!-- LMS Redesign -->
+<div class="group bg-white rounded-xl overflow-hidden border border-outline-variant/30 shadow-sm hover:shadow-xl transition-all flex flex-col">
+<div class="relative overflow-hidden bg-slate-100 flex items-center justify-center p-6 h-80"><div class="relative flex items-center justify-center w-full h-full">
+<!-- Background Phone (Left) -->
+<div class="absolute left-1/4 -translate-x-1/2 w-32 h-64 bg-[#2c2c2e] rounded-[2.5rem] p-1.5 shadow-xl border-[3px] border-[#8e8e93]/30 -rotate-12 opacity-40 transition-transform group-hover:-translate-x-8">
+<div class="w-full h-full rounded-[2.2rem] overflow-hidden bg-black">
+<img alt="LMS Calendar View" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw14QO95W5w17zh20q4-9wjTz963fv55njlXt_QhMkMUgRrNw2KsaMyd16sAG9ZOZdqH8-UiUf4iy8YVaWRCyVkCUOBHPzfOH0-7ulTGXFkrG6hoseEDrbpj28YSH38JO7X4ZFCgQ01N1eaKogDexjMW9rJHndoF0vSN3WvHZONVOWAeId-PsrGq6x_e8vXrfx2VSDV0ocARPFOFzjauPzQurrcQlWV2mnrhzUg1PzCQi6-lqMZlVnyJ8p1iS_HtuM">
+</div>
+</div>
+<!-- Main Phone (Center) -->
+<div class="relative w-44 h-[22rem] bg-[#1c1c1e] rounded-[3rem] p-2 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] border-[4px] border-[#8e8e93]/50 z-20 transition-transform group-hover:scale-105">
+<div class="absolute top-4 left-1/2 -translate-x-1/2 w-14 h-5 bg-black rounded-full z-30"></div>
+<div class="w-full h-full rounded-[2.6rem] overflow-hidden bg-black relative">
+<div class="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none z-10"></div>
+<img alt="LMS Dashboard" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-3Ejc_wPPxjFXkqjoyjv945RTeVY7vO7De9mE-MtqI0-yGOCt2KwbkpbyBSI4N91uTu0WW81OgPZX1z-fLVZEsbK-CnHUjSk0x7a4_A4bJSIj5kDp4uF_4P2I8gSIj9d3j0zQSjgaqOyljUlom0uXu6ma-q8qpm3Ztlptb4XRFBuwRk1Si7koCoJM3i2EiIywqn6WTe4hFBjcMCv8q78BAnz1E5sIps-fBPNyFYlC7GZP2B7BrQULrydiyW0csSr8">
+</div>
+</div>
+<!-- Background Phone (Right) -->
+<div class="absolute right-1/4 translate-x-1/2 w-32 h-64 bg-[#2c2c2e] rounded-[2.5rem] p-1.5 shadow-xl border-[3px] border-[#8e8e93]/30 rotate-12 opacity-40 transition-transform group-hover:translate-x-8">
+<div class="w-full h-full rounded-[2.2rem] overflow-hidden bg-black">
+<img alt="LMS Notifications" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQiXmMigkx0ImSA77wpWUpIacFkqrQTkXg9eEVVB5RbBrS1efBvusx6PqTxns4KZd6Gphaqw1ul2f6qWkctw5RNXhiKZMxxHigx2zLbtFu0QK2W9oxRtcgIfeNrds9NctlsiB9I4Y6rjlxngORGN7zN7FmsuZ2IxeiAc43aOVZp321wzQkBoWktMy3PcePQHOrJ22ZxFUeQKvCi3naKa6h8OtEJytqnOqS3T4GmHsl-0Dabqkgw4qK08WRbp__54l3">
+</div>
+</div>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6 z-30">
+<span class="px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white text-label-md">Mobile App</span>
+</div></div>
+<div class="p-8 flex flex-col gap-4">
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-primary/10 text-primary text-[12px] font-bold rounded">UI Research</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-[12px] font-bold rounded">Figma</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4">LMS Redesign Telkom University</h3>
+<p class="text-on-surface-variant text-body-md line-clamp-2">Research project and redesign of the campus online learning system to improve usability and learning experience.</p>
+<a class="mt-2 text-primary font-label-md flex items-center gap-2 group/link" href="https://www.figma.com/proto/qGMuKCcVGM1CJgM048mRWe/IMK?page-id=0%3A1&amp;node-id=3-2&amp;p=f&amp;viewport=432%2C763%2C0.4&amp;t=yEmX2cADLShS1nIO-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=3%3A2" target="_blank">
+      View Prototype <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- BaliSnap -->
+<div class="group bg-white rounded-xl overflow-hidden border border-outline-variant/30 shadow-sm hover:shadow-xl transition-all flex flex-col">
+<div class="relative overflow-hidden bg-slate-100 flex items-center justify-center p-6 h-80">
+<div class="relative flex items-center justify-center w-full h-full">
+<!-- Background Phone (Left) - IMAGE_4 -->
+<div class="absolute left-1/4 -translate-x-1/2 w-32 h-64 bg-[#2c2c2e] rounded-[2.5rem] p-1.5 shadow-xl border-[3px] border-[#8e8e93]/30 -rotate-12 opacity-40 transition-transform group-hover:-translate-x-8">
+<div class="w-full h-full rounded-[2.2rem] overflow-hidden bg-black">
+<img alt="BaliSnap Login" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzd6w02DBZ2VtWVhELvybD7INLwkkKcSn8rK2p4m95Ai9afyX3emYsJuOcZikrt3JgCFQ9catepBBRESBZHMp5bNSJSNmLe1sf_w7TVQHSZtMR53F5jO3l8K6WskAd8Gz01upZyAYGaFm-Nv04GDZwIu9cPDicJioBZ9TJtJWTzaJIjr-tlKqYF_E4CTPstc_5wQbOD75XowG5ag89QzYFUWifALxWjK8jKNp8gTUbweT76sZwCJB5DMEmWXLGi7dn">
+</div>
+</div>
+<!-- Main Phone (Center) - IMAGE_3 -->
+<div class="relative w-44 h-[22rem] bg-[#1c1c1e] rounded-[3rem] p-2 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] border-[4px] border-[#8e8e93]/50 z-20 transition-transform group-hover:scale-105">
+<div class="absolute top-4 left-1/2 -translate-x-1/2 w-14 h-5 bg-black rounded-full z-30"></div>
+<div class="w-full h-full rounded-[2.6rem] overflow-hidden bg-black relative">
+<div class="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none z-10"></div>
+<img alt="BaliSnap Home" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW5b-4s18vr9xQmbBkOP7Ym3lg2Fm4R5jhKPag2iq1i6UXJr3Z5uw7jjyMWn_FUhjmmXYUNDj-B4G1YPZhXS0SMdE5g7wQn8xmbacvqtMNvFfoyXqEXHWF2XB9GH-XWsjsf_1apPHZAQoo69mO8UN8krHykzmP1uEhHlMJPm3Yrat7flr_DfHUDxbUNlQljmp0c0k3LnUx_zziDvHlY6wfBuRfeE1gmp_TcS06UUP02XMIhcCwnQdvSGPg3m_7DAya">
+</div>
+</div>
+<!-- Background Phone (Right) - IMAGE_2 -->
+<div class="absolute right-1/4 translate-x-1/2 w-32 h-64 bg-[#2c2c2e] rounded-[2.5rem] p-1.5 shadow-xl border-[3px] border-[#8e8e93]/30 rotate-12 opacity-40 transition-transform group-hover:translate-x-8">
+<div class="w-full h-full rounded-[2.2rem] overflow-hidden bg-black">
+<img alt="BaliSnap Camera" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEYpVHhMjH9lwgDOMLU_gCsFL5mIfk32kNwi6nTQYNfQXmV8WkaoouqkI4A4cO2vfnT8VlxuHOO7oGA-sw6d92bGdWvyuR_ulYNk8oFMJzz0twehTghf_vCsjJEnzMKVxy6J3ZxVgRHQs9q3nuEXSkaoVixhjfFnj_TxK2O2EfxVcxq5mu2Ij3BdUsSPYM1tey71b-v8m1Ieomj0tD1d4FAADY6S5OQE5gipfn2VmvV4jkThaYBNpIBmO_Z0p2JLtD">
+</div>
+</div>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6 z-30">
+<span class="px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white text-label-md">Mobile App</span>
+</div>
+</div>
+<div class="p-8 flex flex-col gap-4">
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-primary/10 text-primary text-[12px] font-bold rounded">Mobile Design</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-[12px] font-bold rounded">UI/UX</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-[12px] font-bold rounded">Travel</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-[12px] font-bold rounded">Kotlin</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-[12px] font-bold rounded">MVVM</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4">BaliSnap — Culture Discovery</h3>
+<p class="text-on-surface-variant text-body-md line-clamp-2">A cultural discovery and travel companion app designed to help users explore the beauty of Bali through professional interface design.</p>
+<div class="flex flex-col gap-2">
+<a class="text-primary font-label-md flex items-center gap-2 group/link" href="https://github.com/ObjekAI" target="_blank">
+        View Repository <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">code</span>
+</a>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-xl overflow-hidden border border-outline-variant/30 shadow-sm hover:shadow-xl transition-all flex flex-col">
+<div class="relative overflow-hidden bg-slate-100 flex items-center justify-center p-6 h-80">
+<div class="relative flex items-center justify-center w-full h-full">
+<!-- Background Phone (Left) - Weekly Stats -->
+<div class="absolute left-1/4 -translate-x-1/2 w-32 h-64 bg-[#2c2c2e] rounded-[2.5rem] p-1.5 shadow-xl border-[3px] border-[#8e8e93]/30 -rotate-12 opacity-40 transition-transform group-hover:-translate-x-8">
+<div class="w-full h-full rounded-[2.2rem] overflow-hidden bg-black">
+<img alt="TelDom Weekly Stats" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5SKPhEUZaDtADY9NkTI4kWe-5Ar3Ki_V4EC-rQItI3kn6FbyTcc0EjLPUsQVZAH-ypYXsT_8mD8gCEVBWAHK8fav5rzYi4YB0O-38PoiIEcuwIHgRTcdErjmESJ2U5oihIvEobwiuYIVtMpju2fo2dnIwPdovx44idViQPQMd9QX9lmi42NRMJvmHWcmK0l2jO6V8MVRazy7q9OxI_rbIfFeVvpDozD53i_YbQ3ClQe82rLXd9g39K2lDy7L8W6yM">
+</div>
+</div>
+<!-- Main Phone (Center) - Home Screen -->
+<div class="relative w-44 h-[22rem] bg-[#1c1c1e] rounded-[3rem] p-2 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] border-[4px] border-[#8e8e93]/50 z-20 transition-transform group-hover:scale-105">
+<div class="absolute top-4 left-1/2 -translate-x-1/2 w-14 h-5 bg-black rounded-full z-30"></div>
+<div class="w-full h-full rounded-[2.6rem] overflow-hidden bg-black relative">
+<div class="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none z-10"></div>
+<img alt="TelDom Home Screen" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXFoocA3qPkh1ulGElnslvC6ttgs7AfPS-5oP-iR5Vk5dVwYrpA2qRAqmLTVKleKtpghAP5s9orRc95r9LExB7E2WDBvPhDyc6WORZPArAgXDH8ILTAMuvASg_runWwtfocBOaxN3BxiksuybDLpF-gQbFfR7wE1m15SLMyXBOq90Bv91pnn_4lMIGSAs80XJlfQPmVfdA9-5XqpeCG-bLTW-dqMC_1MuN78WIXXXhk2vC4GYOQ_v-RVx5dXPNf1gi">
+</div>
+</div>
+<!-- Background Phone (Right) - Profile -->
+<div class="absolute right-1/4 translate-x-1/2 w-32 h-64 bg-[#2c2c2e] rounded-[2.5rem] p-1.5 shadow-xl border-[3px] border-[#8e8e93]/30 rotate-12 opacity-40 transition-transform group-hover:translate-x-8">
+<div class="w-full h-full rounded-[2.2rem] overflow-hidden bg-black">
+<img alt="TelDom Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRrLgJCq533FoRppFMnpFkXd9Pthj9eXyKUOSXAteYEfIgJPsxLr_0HkcRkTzVzTAgbHQK4gDGwNaqhtFO8da3Wj11Qcg9NAU3_CPNH7hIGKUqjvIfvC7sxHVISapNRKpn5xKrRDpeBINcuospVWcjqkyNEDDfOBeR_0cMwG6ZvcKu4w2YahSU9rgkNV175EVTRX1CWnf7tRSAs1nXoyX2ioSwdqxX_-SAC-fR6ou1pN6ar0VYD92TdkPJTy9x09c0">
+</div>
+</div>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6 z-30">
+<span class="px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white text-label-md">Mobile App</span>
+</div>
+</div>
+<div class="p-8 flex flex-col gap-4">
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-primary/10 text-primary text-[12px] font-bold rounded">Mobile Design</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-[12px] font-bold rounded">UI/UX</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-[12px] font-bold rounded">Management</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4">TelDom — Dormitory Management</h3>
+<p class="text-on-surface-variant text-body-md line-clamp-2">An integrated management system for university dormitories, simplifying administrative tasks and improving student experience through a mobile-first interface.</p>
+<div class="flex flex-col gap-2">
+<a class="mt-2 text-primary font-label-md flex items-center gap-2 group/link" href="https://www.figma.com/proto/kGJ7u7TF4vyIRdz0yDRjIY/Dormitory-TelU?page-id=0%3A1&amp;node-id=57-2258&amp;starting-point-node-id=88%3A1549&amp;t=qR96fM7KstVVyqK8-1">
+        View Prototype <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">open_in_new</span>
+</a>
+</div>
+</div>
+</div></div>
+</section>
+<!-- Education & Publication -->
+<section class="py-20 bg-primary/5">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 gap-16 items-center max-w-3xl mx-auto">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-8">Education &amp; Publication</h2>
+<div class="flex flex-col gap-8">
+<div class="flex gap-6">
+<div class="w-14 h-14 shrink-0 rounded-xl bg-white flex items-center justify-center shadow-sm text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">school</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Telkom University</h4>
+<p class="text-on-surface-variant">S1 Informatics — <span class="text-primary font-bold">GPA 3.77 (Cum Laude)</span></p>
+<p class="text-on-surface-variant text-body-md mt-1 italic">Graduating 2025</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-14 h-14 shrink-0 rounded-xl bg-white flex items-center justify-center shadow-sm text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Bangkit Academy 2024</h4>
+<p class="text-on-surface-variant">Android Development Path — 2024 Session Certificate</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-14 h-14 shrink-0 rounded-xl bg-white flex items-center justify-center shadow-sm text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">article</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">IEEE Publication (ICITACEE)</h4>
+<p class="text-on-surface-variant">International Conference on Information Technology, Computer, and Electrical Engineering 2025.</p>
+<a class="mt-3 inline-flex items-center gap-2 text-primary font-label-md hover:underline group/link" href="https://github.com/Fayzaputrii/classification-acne-knn-decision-tree" target="_blank">View GitHub <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">open_in_new</span></a><a class="mt-3 ml-4 inline-flex items-center gap-2 text-primary font-label-md hover:underline group/link" href="https://ieeexplore.ieee.org/document/11232769" target="_blank">View on IEEE <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">open_in_new</span></a></div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="certifications">
+<div class="mb-12">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Certifications &amp; Badges</h2>
+<div class="w-20 h-1.5 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6"><div class="group bg-white rounded-xl overflow-hidden border border-outline-variant/30 shadow-sm hover:shadow-xl transition-all flex flex-col">
+<div class="h-44 relative overflow-hidden bg-slate-100 flex items-center justify-center p-4">
+<div class="w-full h-full rounded-lg overflow-hidden border border-outline-variant/20">
+<img alt="Bangkit Academy Graduate Certificate" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqcUe9icyM_XdCjlHoJpMwJ3pBBvVBpqCLwFt-WlD3RDAOVuesO2V3WL8HSTp6SZPXmyGNkhMuTGO_3eE-H8AlqhMPL1GZ6K62XeQaC5pFUOvUORgUTpwlida-l-BTRQf0CIm9eQOrDEMFn3KsfOBeZlbEdSie0JfUqu_jJq0xxhZCv4kX4P0YY-9U-zlSpldAdHECMSC8AWki02tpi0BqNSGE0RgQE37iozl5lFZ-UerW0ZYdA6FtYNlxwBgvSvDc">
+</div>
+</div>
+<div class="p-4 flex flex-col gap-1">
+<h3 class="font-headline-sm text-body-lg font-bold">Bangkit Academy Graduate</h3>
+<p class="text-on-surface-variant text-[12px] mb-1">Specialization: Mobile Development</p>
+<div class="flex items-center justify-between">
+<span class="text-primary text-label-md">Google, GoTo, Tokopedia, Traveloka</span>
+<span class="text-on-surface-variant text-[12px]">July 2024</span>
+</div>
+</div>
+</div><!-- Certificate 1 -->
+
+<!-- Certificate 2 -->
+<div class="group bg-white rounded-xl overflow-hidden border border-outline-variant/30 shadow-sm hover:shadow-xl transition-all flex flex-col"><div class="h-44 relative overflow-hidden bg-slate-100 flex items-center justify-center p-4"><div class="w-full h-full rounded-lg overflow-hidden border border-outline-variant/20"><img alt="Certification of Appreciation - IEEE Indonesia Section" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZJlAUjEjvy6vXbhk2U6u11fZcklorrtiUGYkZQrDybN9lJNyPEIqHuelIzR6sEe2zclO5-MLlOHuA0fg3M8i28M_9b3k23PDLFI_wiAwmgJlrVmsv4CGvAazoGuO3rXUNuvyG6FSI5uKIkrV8nN3SjA21g5Zb7_JJnA5XzsnH0F8UTR7Ozu2N29BrR9CFYPg-hyxJ-4uzfAwU2TlcviJ-6lHEpsydjRdkZ4xNiIDG2Dv2-NlRWlPbyDgX0yjtKvPw"></div></div><div class="p-4 flex flex-col gap-1"><h3 class="font-headline-sm text-body-lg font-bold">Certification of Appreciation</h3><p class="text-on-surface-variant text-[12px] line-clamp-1">Presenter: Classification of Acne Based on Facial Images...</p><div class="flex items-center justify-between"><span class="text-primary text-label-md">IEEE Indonesia Section &amp; ICITACEE</span><span class="text-on-surface-variant text-[12px]">August 28, 2025</span></div></div></div><div class="group bg-white rounded-xl overflow-hidden border border-outline-variant/30 shadow-sm hover:shadow-xl transition-all flex flex-col"><div class="h-44 relative overflow-hidden bg-slate-100 flex items-center justify-center p-4"><div class="w-full h-full rounded-lg overflow-hidden border border-outline-variant/20"><img alt="EPrT Certificate" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvdbK5xCzZJgMiTTJEJKkAtirwluy5P8eFizHUy4LmNQ8sa7ULKgQ2BdrLHue2Q6kEwMBhW9Z4kI5i_IVw_ZMljss2ZCRcsiqKtmHXxzpYvjYLrNzOrw6A5atgoqsaVMUrBEWL7YaYORkUDkAS0uJT6WNW4f1QtRPWqrz09dzSJQy1JdQNrfPhdbxXDzxAJkZ7A-d_dimSHbmDEW2MpCvbJoucPEs9HMS91EidjoovPXO8AicwmRpCTcuOUhqt6NvF"></div></div><div class="p-4 flex flex-col gap-1"><h3 class="font-headline-sm text-body-lg font-bold">EPrT (English Proficiency Test)</h3><p class="text-on-surface-variant text-[12px] mb-1">Total Score: 513</p><div class="flex items-center justify-between"><span class="text-primary text-label-md">Telkom University Language Center</span><span class="text-on-surface-variant text-[12px]">March 2025</span></div></div></div><div class="group bg-white rounded-xl overflow-hidden border border-outline-variant/30 shadow-sm hover:shadow-xl transition-all flex flex-col"><div class="h-44 relative overflow-hidden bg-slate-100 flex items-center justify-center p-4"><div class="w-full h-full rounded-lg overflow-hidden border border-outline-variant/20"><img alt="Internship Certificate — BPK RI" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9ST8J2Fn9iGtQ4EQ6ApVn-JO0bv_teqaMYpSdjqUycrqIYnKIuHfnGxsfnvGNVWT3Oimz00FGF0lmrGoPvcerG38_Q2oS-TTwmP30UToq07QMxq_PbfAcSWCWV5sSu57ptdBNNgqASfS9dz1r6eI-bBi0HxCnbOWpNRwvJb2yJXEEMGT8Uyk7Y1txLIWI5F_k0KHuud8oNGh0vnofWUcxBtpvP6IcP_8g3gwrBTzIIU-rctK7xS12V07V2sWCC20S"></div></div><div class="p-4 flex flex-col gap-1"><h3 class="font-headline-sm text-body-lg font-bold">Internship Certificate — BPK RI</h3><p class="text-on-surface-variant text-[12px] mb-1">Magang di Badan Pemeriksa Keuangan Republik Indonesia</p><div class="flex items-center justify-between"><span class="text-primary text-label-md">BPK RI</span><span class="text-on-surface-variant text-[12px]">July – August 2024</span></div></div></div><div class="group bg-white rounded-xl overflow-hidden border border-outline-variant/30 shadow-sm hover:shadow-xl transition-all flex flex-col">
+<div class="h-44 relative overflow-hidden bg-slate-100 flex items-center justify-center p-4">
+<div class="w-full h-full rounded-lg overflow-hidden border border-outline-variant/20">
+<img alt="Dicoding Machine Learning for Android Certificate" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFs0hZfzLa-GjrJ62qDmMQTdPWWCyGYZILce5shAb0XCJcibgFEKKNzS69BtN5DvAZaGWiX528hHYPoAcJSRadtpnlIh9Fzxy1WOkrsFijICFBVhKcVtrO76P3RPWoSM4R6w0CCWafN81QwCmphnBUZw7n-Dz6W8YilfB_f3hgwqfIXPNUBcxQZ33R2YrmzPzZg32zS9ghLEqT6X6lKQ9EeQ8ewWjS1923mqJFAC4PCAEbYoP8mfQ0saPCbWzLVYbH">
+</div>
+</div>
+<div class="p-4 flex flex-col gap-1">
+<h3 class="font-headline-sm text-body-lg font-bold">Belajar Penerapan Machine Learning untuk Android</h3>
+<p class="text-on-surface-variant text-[12px] mb-1">ID: RVZKR69OQPD5</p>
+<div class="flex items-center justify-between">
+<span class="text-primary text-label-md">Dicoding Academy</span>
+<span class="text-on-surface-variant text-[12px]">April 2024</span>
+</div>
+</div>
+</div><div class="group bg-white rounded-xl overflow-hidden border border-outline-variant/30 shadow-sm hover:shadow-xl transition-all flex flex-col"><div class="h-44 relative overflow-hidden bg-slate-100 flex items-center justify-center p-4"><div class="w-full h-full rounded-lg overflow-hidden border border-outline-variant/20"><img alt="Belajar Membuat Aplikasi Android untuk Pemula Certificate" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMQ13j6dPVnsN3xqduUFXVgHPNItTPcGcY72ZTY073XkEfGcfxzefN31qV-4-kh9efpNahahH-7v2OciqTmVbuiz4bMRJ7sJN0ZR_Ic8sBADl9faDD2-KQ5xWi7a83zGkYht-wd9_kY2xhZGofYmPIyuCbXZJal6S86Ti2StMMIeAM41SX_FDlsHuLBT3UGtsPJ7lVE5Ts2PSLpEG5gj0jH7VXvZtMkLiPs27U3Cr0UjKrCmL9EO6gjVqom9TzFbd1"></div></div><div class="p-4 flex flex-col gap-1"><h3 class="font-headline-sm text-body-lg font-bold">Belajar Membuat Aplikasi Android</h3><p class="text-on-surface-variant text-[12px] mb-1">Specialization: Android Development Path</p><p class="text-on-surface-variant text-[12px] mb-1">ID: MRZM83R80ZYQ</p><div class="flex items-center justify-between"><span class="text-primary text-label-md">Dicoding Academy</span><span class="text-on-surface-variant text-[12px]">March 2024</span></div></div></div><div class="group bg-white rounded-xl overflow-hidden border border-outline-variant/30 shadow-sm hover:shadow-xl transition-all flex flex-col">
+<div class="h-44 relative overflow-hidden bg-slate-100 flex items-center justify-center p-4">
+<div class="w-full h-full rounded-lg overflow-hidden border border-outline-variant/20">
+<img alt="Lembaga Bahasa LIA Certificate of Achievement" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnIipGJsBhXXe6Ip3K9euZQvgwSJY0g9-feSxfZzZOo2Q_qmBZGsBIYVVqN4XEIzFz-mAV-aSgxOw7nMCL2uC7tl_vcJ4hP2N_DeU7A2vUBJThtYZbTB6vysScJSS6hhIieRWFQDpP1s1wv-FbysijVjsLvCYjGge6N1du1TvpuakhMitAQRLK0cbwZjsLnHjP0IQ-XP4GPjN7VEnUbbJQppxmMBy8xPGbvVbQK0wfItbFRxHZKKWh9uio7-ysbQ-J">
+</div>
+</div>
+<div class="p-4 flex flex-col gap-1">
+<h3 class="font-headline-sm text-body-lg font-bold">Certificate of Achievement</h3>
+<p class="text-on-surface-variant text-[12px] mb-1">English for Adults: High-Intermediate Levels</p>
+<div class="flex items-center justify-between">
+<span class="text-primary text-label-md">Lembaga Bahasa LIA</span>
+<span class="text-on-surface-variant text-[12px]">December 22, 2019</span>
+</div>
+</div>
+</div></div>
+</section><section class="py-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="contact">
+<div class="bg-primary p-12 text-on-primary flex flex-col justify-between relative overflow-hidden rounded-[2rem] border border-outline-variant/30 shadow-2xl w-full">
+<div class="absolute -bottom-20 -right-20 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+<div>
+<h2 class="font-headline-md text-headline-md mb-4">Let's Discuss</h2>
+<p class="text-on-primary/80 mb-10 max-w-2xl">I am open to design collaboration or software development opportunities. Let's create something great together.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<a class="flex items-center gap-4 hover:translate-x-2 transition-transform" href="mailto:fayza.putri03@gmail.com">
+<div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<span class="">fayza.putri03@gmail.com</span>
+</a>
+<a class="flex items-center gap-4 hover:translate-x-2 transition-transform" href="https://wa.me/0811163056">
+<div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+<span class="material-symbols-outlined">call</span>
+</div>
+<span class="">0811163056</span>
+</a>
+<a class="flex items-center gap-4 hover:translate-x-2 transition-transform" href="https://linkedin.com">
+<div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+<span class="material-symbols-outlined">person</span>
+</div>
+<span class="">Fayza Putri Zulfikar</span>
+</a>
+</div>
+</div>
+<div class="mt-20 pt-8 border-t border-white/10">
+<p class="text-on-primary/60 text-label-md">Current Location: Bekasi, Indonesia</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface py-12 border-t border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-stack-gap">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-display-lg text-headline-sm text-primary"><br></span>
+<p class="text-on-surface-variant text-body-md"><br></p>
+</div>
+<div class="flex gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="https://www.linkedin.com/in/fayza-putri-zulfikar-b13ab2260/" target="_blank">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="https://github.com/Fayzaputrii?tab=overview&amp;from=2026-07-01&amp;to=2026-07-28" target="_blank">GitHub</a>
+
+
+</div>
+</div>
+</footer>
+<script>
+        // Smooth scroll revealing header
+        let lastScroll = 0;
+        const nav = document.querySelector('nav');
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 0) {
+                nav.classList.remove('shadow-md');
+                return;
+            }
+            
+            if (currentScroll > lastScroll) {
+                // Scroll down
+                nav.style.transform = 'translateY(-100%)';
+            } else {
+                // Scroll up
+                nav.style.transform = 'translateY(0)';
+                nav.classList.add('shadow-md');
+            }
+            lastScroll = currentScroll;
+        });
+    </script>
+
+
+
+
+
+
+
+
+</body></html>
